@@ -1,5 +1,7 @@
 -- BookCycle Customer Analysis
-SELECT customer_id, preferred_store
+SELECT 
+    customer_id,
+    preferred_store,
+    join_date
 FROM customers
-WHERE is_member == 1
-ORDER BY birth_year DESC;
+WHERE birth_year > 1990;
